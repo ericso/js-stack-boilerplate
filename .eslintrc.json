@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype",
+    "compat"
+  ],
+  "rules": {
+    "semi": [2, "always"],
+    "no-unexpected-multiline": 2,
+    "compat/compat": 2,
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "ignore"
+    }]
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  }
+}
