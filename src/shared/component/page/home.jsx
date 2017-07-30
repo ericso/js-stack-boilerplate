@@ -5,24 +5,7 @@ import Helmet from 'react-helmet';
 import injectSheet from 'react-jss';
 
 import { APP_NAME } from '../../config';
-
-
-const styles = {
-  hoverMe: {
-    '&:hover': {
-      color: 'red',
-    },
-  },
-  '@media (max-width: 800px)': {
-    resizeMe: {
-      color: 'red',
-    },
-  },
-  specialButton: {
-    composes: ['btn', 'btn-primary'],
-    backgroundColor: 'limegreen',
-  },
-};
+import styles from './homeStyles';
 
 
 const HomePage = ({ classes }: { classes: Object }) =>
