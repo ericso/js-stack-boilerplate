@@ -2,12 +2,12 @@
 
 import React from 'react';
 
-type Props = {
+type PropsType = {
   label: string,
   handleClick: Function,
 };
 
-const Button = ({ label, handleClick }: Props) =>
+const Button = ({ label, handleClick }: PropsType) =>
   <button onClick={handleClick}>{ label }</button>;
 
 export default Button;

@@ -4,16 +4,14 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import injectSheet from 'react-jss';
 
-import { APP_NAME } from '../../config';
+import { APP_NAME } from '../../../config';
 import styles from './homeStyles';
 
-
-type HomePagePropsType = {
+type PropsType = {
   classes: Object,
 };
 
-
-const HomePage = (props: HomePagePropsType) => {
+const HomePage = (props: PropsType) => {
   const { classes } = props;
 
   return (
