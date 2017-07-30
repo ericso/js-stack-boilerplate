@@ -5,7 +5,10 @@ import ReactDOMServer from 'react-dom/server';
 import { Provider } from 'react-redux';
 import { StaticRouter } from 'react-router';
 import Helmet from 'react-helmet';
-import { SheetsRegistry, SheetsRegistryProvider } from 'react-jss';
+import {
+  SheetsRegistry,
+  JssProvider,
+} from 'react-jss';
 
 import initStore from './init-store';
 import App from '../shared/app';
@@ -24,9 +27,9 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
   const appHtml = ReactDOMServer.renderToString(
     <Provider store={store}>
       <StaticRouter location={location} context={routerContext}>
-        <SheetsRegistryProvider registry={sheets}>
+        <JssProvider registry={sheets}>
           <App />
-        </SheetsRegistryProvider>
+        </JssProvider>
       </StaticRouter>
     </Provider>
   );
