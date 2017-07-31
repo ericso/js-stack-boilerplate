@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import { ThemeProvider } from 'react-jss';
 
 import Message from '../../container/message';
 import HelloButton from '../../container/hello-button';
@@ -10,7 +9,7 @@ import HelloButton from '../../container/hello-button';
 
 const TITLE = 'Hello Page';
 
-const THEME = {
+const STYLE = {
   backgroundColor: 'blue',
   fontSize: '24px',
   fontWeight: '400',
@@ -27,12 +26,8 @@ const HelloPage = () =>
       ]}
     />
     <h1>{TITLE}</h1>
-
     <Message />
-
-    <ThemeProvider theme={THEME}>
-      <HelloButton />
-    </ThemeProvider>
+    <HelloButton style={STYLE} />
   </div>;
 
 export default HelloPage;

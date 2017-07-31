@@ -2,13 +2,12 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import { ThemeProvider } from 'react-jss';
 
 import MessageAsync from '../../../container/message-async';
 import HelloAsyncButton from '../../../container/hello-async-button';
 
 
-const THEME = {
+const STYLE = {
   backgroundColor: 'red',
   fontSize: '16px',
   fontWeight: 'bold',
@@ -27,12 +26,8 @@ const HelloAsyncPage = () =>
       ]}
     />
     <h1>{TITLE}</h1>
-
     <MessageAsync />
-
-    <ThemeProvider theme={THEME}>
-      <HelloAsyncButton />
-    </ThemeProvider>
+    <HelloAsyncButton style={STYLE} />
   </div>;
 
 export default HelloAsyncPage;

@@ -8,18 +8,19 @@ type PropsType = {
   classes: Object,
   label: string,
   handleClick: Function,
+
 };
 
 
-const styles = theme => ({
+const styles = {
   button: {
-    background: theme.backgroundColor,
+    background: props => props.style.backgroundColor,
   },
   label: {
-    fontSize: theme.fontSize,
-    fontWeight: theme.fontWeight,
+    fontSize: props => props.style.fontSize,
+    fontWeight: props => props.style.fontWeight,
   },
-});
+};
 
 
 const Button = (props: PropsType) => {
