@@ -2,11 +2,20 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
+import { ThemeProvider } from 'react-jss';
 
 import Message from '../../container/message';
 import HelloButton from '../../container/hello-button';
 
+
 const TITLE = 'Hello Page';
+
+const THEME = {
+  backgroundColor: 'blue',
+  fontSize: '24px',
+  fontWeight: '400',
+};
+
 
 const HelloPage = () =>
   <div>
@@ -18,8 +27,12 @@ const HelloPage = () =>
       ]}
     />
     <h1>{TITLE}</h1>
+
     <Message />
-    <HelloButton />
+
+    <ThemeProvider theme={THEME}>
+      <HelloButton />
+    </ThemeProvider>
   </div>;
 
 export default HelloPage;
