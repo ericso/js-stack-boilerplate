@@ -6,8 +6,6 @@ import Helmet from 'react-helmet';
 import Message from '../../../container/message';
 import HelloButton from '../../../container/hello-button';
 
-import STYLE from './hello-style';
-
 
 const TITLE = 'Hello Page';
 
