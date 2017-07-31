@@ -7,8 +7,7 @@ import injectSheet from 'react-jss';
 type PropsType = {
   classes: Object,
   label: string,
-  handleClick: Function,
-
+  handleClick: Function
 };
 
 

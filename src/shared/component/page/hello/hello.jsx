@@ -3,17 +3,13 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import Message from '../../container/message';
-import HelloButton from '../../container/hello-button';
+import Message from '../../../container/message';
+import HelloButton from '../../../container/hello-button';
+
+import STYLE from './hello-style';
 
 
 const TITLE = 'Hello Page';
-
-const STYLE = {
-  backgroundColor: 'blue',
-  fontSize: '24px',
-  fontWeight: '400',
-};
 
 
 const HelloPage = () =>

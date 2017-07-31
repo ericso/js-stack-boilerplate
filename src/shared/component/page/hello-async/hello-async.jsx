@@ -6,12 +6,8 @@ import Helmet from 'react-helmet';
 import MessageAsync from '../../../container/message-async';
 import HelloAsyncButton from '../../../container/hello-async-button';
 
+import STYLE from './hello-async-style';
 
-const STYLE = {
-  backgroundColor: 'red',
-  fontSize: '16px',
-  fontWeight: 'bold',
-};
 
 const TITLE = 'Async Hello Page';
 
