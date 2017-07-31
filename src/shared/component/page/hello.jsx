@@ -6,18 +6,18 @@ import Helmet from 'react-helmet';
 import Message from '../../container/message';
 import HelloButton from '../../container/hello-button';
 
-const title = 'Hello Page';
+const TITLE = 'Hello Page';
 
 const HelloPage = () =>
   <div>
     <Helmet
-      title={title}
+      title={TITLE}
       meta={[
         { name: 'description', content: 'A page to say hello' },
-        { property: 'og:title', content: title },
+        { property: 'og:title', content: TITLE },
       ]}
     />
-    <h1>{title}</h1>
+    <h1>{TITLE}</h1>
     <Message />
     <HelloButton />
   </div>;

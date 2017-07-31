@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import injectSheet from 'react-jss';
 
 import { APP_NAME } from '../../../config';
-import styles from './homeStyles';
+import styles from './home-styles';
 
 type PropsType = {
   classes: Object,

@@ -12,7 +12,6 @@ const styles = {
     },
   },
   specialButton: {
-    composes: ['btn', 'btn-primary'],
     backgroundColor: 'limegreen',
   },
 };

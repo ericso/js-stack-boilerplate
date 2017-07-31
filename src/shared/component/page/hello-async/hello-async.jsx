@@ -3,21 +3,21 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import MessageAsync from '../../container/message-async';
-import HelloAsyncButton from '../../container/hello-async-button';
+import MessageAsync from '../../../container/message-async';
+import HelloAsyncButton from '../../../container/hello-async-button';
 
-const title = 'Async Hello Page';
+const TITLE = 'Async Hello Page';
 
 const HelloAsyncPage = () =>
   <div>
     <Helmet
-      title={title}
+      title={TITLE}
       meta={[
         { name: 'description', content: 'A page to say hello asynchronously' },
-        { property: 'og:title', content: title },
+        { property: 'og:title', content: TITLE },
       ]}
     />
-    <h1>{title}</h1>
+    <h1>{TITLE}</h1>
     <MessageAsync />
     <HelloAsyncButton />
   </div>;
