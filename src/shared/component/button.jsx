@@ -12,9 +12,7 @@ type PropsType = {
 
 
 // Safely extract the style property from props
-const extractStyle = (props: Object, name: string) => {
-  return props.style && props.style[name];
-};
+const extractStyle = (props: Object, name: string) => props.style && props.style[name];
 
 const styles = {
   button: {
