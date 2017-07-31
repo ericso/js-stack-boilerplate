@@ -23,7 +23,7 @@ const HelloPage = () =>
     />
     <h1>{TITLE}</h1>
     <Message />
-    <HelloButton style={STYLE} />
+    <HelloButton />
   </div>;
 
 export default HelloPage;

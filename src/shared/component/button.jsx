@@ -11,13 +11,18 @@ type PropsType = {
 };
 
 
+// Safely extract the style property from props
+const extractStyle = (props: Object, name: string) => {
+  return props.style && props.style[name];
+};
+
 const styles = {
   button: {
-    background: props => props.style.backgroundColor,
+    background: props => extractStyle(props, 'backgroundColor'),
   },
   label: {
-    fontSize: props => props.style.fontSize,
-    fontWeight: props => props.style.fontWeight,
+    fontSize: props => extractStyle(props, 'fontSize'),
+    fontWeight: props => extractStyle(props, 'fontWeight'),
   },
 };
 
