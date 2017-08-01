@@ -1,6 +1,6 @@
 // @flow
 
-const styles = {
+const style = {
   hoverMe: {
     '&:hover': {
       color: 'red',
@@ -16,4 +16,4 @@ const styles = {
   },
 };
 
-export default styles;
+export default style;
