@@ -4,7 +4,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import injectSheet from 'react-jss';
 
-import { APP_NAME } from '../../../config';
+import { APP_NAME } from '../../config';
 import styles from './home-styles';
 
 type PropsType = {

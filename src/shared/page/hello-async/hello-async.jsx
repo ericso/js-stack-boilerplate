@@ -3,8 +3,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import MessageAsync from '../../../container/message-async';
-import HelloAsyncButton from '../../../container/hello-async-button';
+import MessageAsync from '../../container/message-async';
+import HelloAsyncButton from '../../container/hello-async-button';
 
 import STYLE from './hello-async-style';
 
