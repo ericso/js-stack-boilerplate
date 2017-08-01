@@ -6,7 +6,7 @@ import Helmet from 'react-helmet';
 import MessageAsync from '../../container/message-async';
 import HelloAsyncButton from '../../container/hello-async-button';
 
-import STYLE from './hello-async-style';
+import buttonStyles from './hello-async-style';
 
 
 const TITLE = 'Async Hello Page';
@@ -23,7 +23,7 @@ const HelloAsyncPage = () =>
     />
     <h1>{TITLE}</h1>
     <MessageAsync />
-    <HelloAsyncButton style={STYLE} />
+    <HelloAsyncButton style={buttonStyles} />
   </div>;
 
 export default HelloAsyncPage;

@@ -1,9 +1,9 @@
 // @flow
 
-const STYLE = {
+const buttonStyles = {
   backgroundColor: 'red',
   fontSize: '16px',
   fontWeight: 'bold',
 };
 
-export default STYLE;
+export default buttonStyles;

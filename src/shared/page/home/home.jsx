@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import injectSheet from 'react-jss';
 
 import { APP_NAME } from '../../config';
-import styles from './home-styles';
+import style from './home-style';
 
 type PropsType = {
   classes: Object,
@@ -36,4 +36,4 @@ const HomePage = (props: PropsType) => {
   );
 };
 
-export default injectSheet(styles)(HomePage);
+export default injectSheet(style)(HomePage);
