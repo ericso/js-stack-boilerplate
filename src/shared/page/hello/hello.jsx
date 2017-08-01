@@ -3,8 +3,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import Message from '../../../container/message';
-import HelloButton from '../../../container/hello-button';
+import Message from '../../container/message';
+import HelloButton from '../../container/hello-button';
 
 
 const TITLE = 'Hello Page';
